@@ -19,8 +19,8 @@
     ]
   },
   "scripts": {
-    "dev": "esbuild src/**/*.ts --platform=node --target=node14.18 --outfile=out/extension.js --watch",
-    "build": "esbuild src/**/*.ts --platform=node --target=node14.18 --outfile=out/extension.js",
+    "dev": "esbuild src/**/*.ts --platform=node --target=node14.18 --outfile=./out/extension.js --watch",
+    "build": "esbuild src/**/*.ts --platform=node --target=node14.18 --outfile=./out/extension.js",
     "lint": "tsc -noEmit && eslint . --ext .ts,.tsx",
     "vscode:prepublish": "yarn run build"
   },
