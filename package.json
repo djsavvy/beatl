@@ -19,9 +19,10 @@
     ]
   },
   "scripts": {
-    "dev": "esbuild src/**/*.ts --platform=node --target=node14.18 --outfile=./out/extension.js --watch",
-    "build": "esbuild src/**/*.ts --platform=node --target=node14.18 --outfile=./out/extension.js",
+    "bld": "esbuild src/**/*.ts --platform=node --bundle --target=node14.18 --external:vscode --outfile=./out/extension.js",
+    "dev": "esbuild src/**/*.ts --platform=node --bundle --target=node14.18 --external:vscode --outfile=./out/extension.js --watch",
     "lint": "tsc -noEmit && eslint . --ext .ts,.tsx",
+    "build": "yarn run bld",
     "vscode:prepublish": "yarn run build"
   },
   "devDependencies": {
