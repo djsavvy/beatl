@@ -1,5 +1,29 @@
 {
+  "name": "beatl",
+  "version": "0.0.1",
+  "repository": "https://github.com/djsavvy/beatl",
   "packageManager": "yarn@3.2.2",
+  "engines": {
+    "vscode": "^1.34.0"
+  },
+	"activationEvents": [
+		"onCommand:extension.helloWorld"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.helloWorld",
+				"title": "Hello World"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -watch -p ./"
+	},
   "devDependencies": {
     "@types/node": "^18.6.2",
     "@types/vscode": "^1.69.0",
