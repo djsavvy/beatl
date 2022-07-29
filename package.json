@@ -6,24 +6,24 @@
   "engines": {
     "vscode": "^1.34.0"
   },
-	"activationEvents": [
-		"onCommand:extension.helloWorld"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"lint": "eslint . --ext .ts,.tsx",
-		"watch": "tsc -watch -p ./"
-	},
+  "activationEvents": [
+    "onCommand:extension.helloWorld"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "esbuild src/**/*.ts --platform=node --target=node14.18 --outfile=out/extension.js --watch",
+    "build": "esbuild src/**/*.ts --platform=node --target=node14.18 --outfile=out/extension.js",
+    "lint": "tsc -noEmit && eslint . --ext .ts,.tsx",
+    "vscode:prepublish": "yarn run build"
+  },
   "devDependencies": {
     "@types/node": "^18.6.2",
     "@types/vscode": "^1.69.0",
