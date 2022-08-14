@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@types/node", "npm:18.6.2"],\
+            ["@types/spotify-web-api-node", "npm:5.0.7"],\
             ["@types/vscode", "npm:1.69.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:95133719c94822aaede29d24fd6c7a4e76a1a9ff3a02608ac461088e6613572f23ec90646967375f18eaf0b22254bfd00cd6ff3ead3ac0d694469318bc0486aa#npm:5.31.0"],\
             ["@typescript-eslint/parser", "virtual:95133719c94822aaede29d24fd6c7a4e76a1a9ff3a02608ac461088e6613572f23ec90646967375f18eaf0b22254bfd00cd6ff3ead3ac0d694469318bc0486aa#npm:5.31.0"],\
@@ -139,6 +140,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-18.6.2-cd106eb850-644c460bae.zip/node_modules/@types/node/",\
           "packageDependencies": [\
             ["@types/node", "npm:18.6.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/spotify-api", [\
+        ["npm:2016.0.29", {\
+          "packageLocation": "./.yarn/cache/@types-spotify-api-npm-2016.0.29-bedf28c26d-fa9be1d646.zip/node_modules/@types/spotify-api/",\
+          "packageDependencies": [\
+            ["@types/spotify-api", "npm:2016.0.29"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/spotify-web-api-node", [\
+        ["npm:5.0.7", {\
+          "packageLocation": "./.yarn/cache/@types-spotify-web-api-node-npm-5.0.7-f102a63963-fe8c1b2825.zip/node_modules/@types/spotify-web-api-node/",\
+          "packageDependencies": [\
+            ["@types/spotify-web-api-node", "npm:5.0.7"],\
+            ["@types/spotify-api", "npm:2016.0.29"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -481,6 +501,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["beatl", "workspace:."],\
             ["@types/node", "npm:18.6.2"],\
+            ["@types/spotify-web-api-node", "npm:5.0.7"],\
             ["@types/vscode", "npm:1.69.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:95133719c94822aaede29d24fd6c7a4e76a1a9ff3a02608ac461088e6613572f23ec90646967375f18eaf0b22254bfd00cd6ff3ead3ac0d694469318bc0486aa#npm:5.31.0"],\
             ["@typescript-eslint/parser", "virtual:95133719c94822aaede29d24fd6c7a4e76a1a9ff3a02608ac461088e6613572f23ec90646967375f18eaf0b22254bfd00cd6ff3ead3ac0d694469318bc0486aa#npm:5.31.0"],\
