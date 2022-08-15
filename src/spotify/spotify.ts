@@ -1,4 +1,4 @@
-import * as SpotifyApi from 'spotify-web-api-node';
+import SpotifyApi from 'spotify-web-api-node';
 
 const spotify = new SpotifyApi({});
 // spotify.setAccessToken('');
